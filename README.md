@@ -28,7 +28,7 @@ This project involves predicting the **median house prices** in Boston suburbs u
 
 1. **Data Cleaning**
    - Checked for missing and duplicate values
-   - Removed outliers (especially in target column `MEDV`)
+   - Checked outliers (The outliers seemed real and meaningful values so didnt hadnle it; used models that were less sensitive to outliers)
   
 2. **Exploratory Data Analysis (EDA)**
    - Correlation matrix to identify important features
@@ -53,17 +53,9 @@ This project involves predicting the **median house prices** in Boston suburbs u
 
 | Model                  | MSE         | R² Score   |
 |------------------------|-------------|------------|
-| Linear Regression      | ~24.29      | ~0.67      |
-| Random Forest (Tuned)  | ~9.85       | ~0.86      |
-| Gradient Boosting (Tuned) | ~6.18   | ~0.91      |
-
----
-
-## Files in this Repo
-
-- `Boston_House_Price_Prediction.ipynb`: Jupyter notebook with full code and explanations
-- `README.md`: Project overview
-- (Optional) `requirements.txt`: List of required libraries
+| Linear Regression      | ~24.29      | ~0.66      |
+| Random Forest (Tuned)  | ~10.48     | ~0.85     |
+| Gradient Boosting (Tuned) | ~6.20   | ~0.91    |
 
 ---
 
@@ -74,14 +66,6 @@ This project involves predicting the **median house prices** in Boston suburbs u
 - pandas, numpy
 - matplotlib, seaborn
 - scikit-learn
-
----
-
-## Future Improvements
-
-- Try more advanced models like XGBoost or LightGBM
-- Perform feature engineering (interaction terms, polynomial features)
-- Deploy model using Flask or Streamlit
 
 ---
 
